@@ -127,7 +127,7 @@ app.use("/",userRouter);
 // });
 
 app.all("*",(req,res,next)=>{
-    next(new ExpressError(404,"Page Not found!"));
+    next(new ExpressError(404,"Welcome to the site , please click on Airbnb home"));
 });
 
 app.use((err,req,res,next)=>{
